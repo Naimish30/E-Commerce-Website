@@ -1,7 +1,175 @@
 .App {
   text-align: center;
 }
+.nav-bar-header{
+  text-align: center;
+}
+.nav-bar-header li{
+  display: inline;
+  padding: 10px;
+}
+.headers-right{
+  text-decoration: none;
+  float: right;
+  padding-left:10px;
+  padding-right: 10px;
+  
+} 
+.cart-icon{
+  text-decoration: none;
+  float: right;
+  padding-top: 8px;
+  padding-left:10px;
+  padding-right: 10px;
+}
+.count{
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  background: red;
+  border-radius: 100%;
+  /* padding: 2px; */
+  color: white;
+  width: 12px;
+  font-size: 10px;
+}
+.logout-btn{
+  border: 0;
+  background-color: white;
+  text-decoration: none;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.banner-text{
+  transform: scale(4.5);
+  color:white;
+  position: absolute;
+  bottom: 7rem;
+  padding-left: 17%;
+}
+.banner-button{
+  border: none;
+  background-color: red;
+  border-radius: 6px;
+  transform: scale(0.4);
+  
+}
+.img-fluid{
+  width: 100%;
+  /* height: auto; */
+}
+.search-bar{
+  margin: 20px;
+}
+.headers-center{
+  text-decoration: none;
+  float: center;
 
+}
+.logo{
+  width: 150px;
+  height: 20px;
+  float: left;
+  padding-right: 10px;
+} 
+.login-container{
+  background-color:#f3f3f3;
+  border-radius: 5px;
+  margin-left: 33%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  width: 500px;
+
+}
+.Register-container{
+  background-color:#f3f3f3;
+  border-radius: 5px;
+  margin-left: 33%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  width: 500px;
+
+}
+.input-text{
+  border: none;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 250px;
+  padding-left: 10px;
+}
+.heading-text{
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.remember{
+  display: inline;
+  align-items: center;
+  margin-left: -25%;
+  margin-top: 15px; 
+  margin-right: 10px;
+  transform: scale(1.5);
+  border-radius: none;
+}
+.card{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.card_button{
+  color: red;
+  border: 0;
+  margin:0 10px 10px 10px;
+  border-radius: 5px;
+}
+.card_text{
+  font-size: 18px;
+  
+  color:darkolivegreen;
+}
+.card_image{
+  width: 200px;
+  height: 200px;
+}
+.counter-text{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.count-btn{
+  border: 0;
+  border-radius: 50%;
+  background-color: antiquewhite;
+}
+.wrapper{
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+.normal-text{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color:darkseagreen;
+}
+.forget-text{
+  display: inline;
+  align-items: center;
+  margin-left: -25%;
+  margin-top: 15px;
+  padding-top: 50px; 
+  margin-right: 10px;
+  color: red;
+}
+.login-btn{
+  font-size: 18px;
+  margin-top: 40px;
+  background-color: #dc3545;
+  border-radius: 20px;
+  transform: scale(1.5);
+  border: none;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,6 +179,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+figure {
+  width: 100%;
+  text-align: center;
 }
 
 .App-header {
@@ -28,11 +200,77 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen  and (max-width:850px){
+  .banner-text{
+    transform: scale(1.5);
+    color:white;
+    position: absolute;
+    bottom: 3rem;
+    padding-left: 33%;
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper{
+    margin-left: 50px;
+    margin-right: 50px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
   }
 }
+@media screen  and (max-width:650px){
+  .banner-text{
+    transform: scale(1.);
+    color:white;
+    position: absolute;
+    bottom: 2rem;
+    padding-left: 33%;
+  }
+  .wrapper{
+    margin-left: 20px;
+    display: inline;
+  }
+  .card{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 150px ;
+  }
+}
+
+@media screen  and (max-width:412px){
+  .banner-text{
+    transform: scale(0.75);
+    color:white;
+    position: absolute;
+    bottom: 0.2rem;
+    padding-left: 40%;
+  }
+  .wrapper{
+    margin-left: 20px;
+    display: inline;
+  }
+  .card{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 35px ;
+  }
+  .normal-text{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:darkseagreen;
+  }
+  .logo{
+    width: 75px;
+    height: 10px;
+    float: left;
+    padding-right: 5px;
+  } 
+  .nav-bar-header li{
+    display: inline;
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+
+

@@ -1,0 +1,69 @@
+
+ .heading-text{
+   font-size: 30px;
+   padding: 10px 20px;
+   text-align: center;
+} 
+
+
+.total-price-text{
+    font-size: 50px;
+}
+.cart-image{
+    width: 177px;
+    height: 177px;
+    text-align: center;
+    -webkit-box-align: center;
+}
+.wrapper tbody td{
+    border-color: #ccc;
+    text-align: center;
+    padding: 10px 20px;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #333333;
+}
+.remove-btn{
+    margin: 77px;
+    font-weight: 500;
+    padding: 10px 20px;
+    
+    border: 0;
+
+}
+.table{
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td{
+    display: table-cell;
+    vertical-align: inherit;
+}
+.cart-bill{
+    width: 30%;
+    height: 300px;
+    padding: 50px;
+    margin-left: 300px;
+    background-color: #f3f3f3;
+}
+.cart-btn{
+    border: none;
+    border-radius: 50%;
+    
+} 
