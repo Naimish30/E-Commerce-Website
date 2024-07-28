@@ -1,21 +1,21 @@
 
- .heading-text{
+ .heading-text-123{
    font-size: 30px;
    padding: 10px 20px;
    text-align: center;
 } 
 
 
-.total-price-text{
+.total-price-text-123{
     font-size: 50px;
 }
-.cart-image{
+.cart-image-123{
     width: 177px;
     height: 177px;
     text-align: center;
-    -webkit-box-align: center;
+    -webkit-box-align: center ;
 }
-.wrapper tbody td{
+.wrapper-123 tbody td{
     border-color: #ccc;
     text-align: center;
     padding: 10px 20px;
@@ -23,7 +23,7 @@
     font-weight: 600;
     color: #333333;
 }
-.remove-btn{
+.remove-btn-123{
     margin: 77px;
     font-weight: 500;
     padding: 10px 20px;
@@ -31,7 +31,7 @@
     border: 0;
 
 }
-.table{
+.table-123{
     --bs-table-bg: transparent;
     --bs-table-accent-bg: transparent;
     --bs-table-striped-color: #212529;
@@ -55,14 +55,14 @@ td{
     display: table-cell;
     vertical-align: inherit;
 }
-.cart-bill{
+.cart-bill-123{
     width: 30%;
     height: 300px;
     padding: 50px;
     margin-left: 300px;
     background-color: #f3f3f3;
 }
-.cart-btn{
+.cart-btn-123{
     border: none;
     border-radius: 50%;
     

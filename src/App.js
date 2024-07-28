@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import './tailwind.css';
 import Headers from './Components/Headers';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login';
@@ -12,7 +12,7 @@ import Cart from './Components/Cart';
 import { CartProvider } from 'react-use-cart';
 import Information from './Components/Information';
 import Products from './Components/Products';
-
+import Contact from './Components/Contact'
 function App() {
   return (
 
@@ -25,6 +25,7 @@ function App() {
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/register' element={<Signup/>}></Route>
       <Route path='/' element={<Protected Cmp={Home}/>}></Route>
+      <Route path='/contact' element={<Protected Cmp={Contact}/>}></Route>
       <Route path='/cart' element={<Protected Cmp={Cart}/>}></Route>
       <Route path='/aboutus' element={<Protected Cmp={AboutUs}/>}></Route>
       <Route path='/products' element={<Protected Cmp={Products}/>}></Route>

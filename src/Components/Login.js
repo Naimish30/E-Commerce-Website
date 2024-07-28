@@ -36,7 +36,6 @@ function Login() {
   };
 
   const handleLogin = () => {
-
     Check();
   };
 
@@ -57,7 +56,7 @@ function Login() {
         <input type="password" placeholder="Enter your password" className="input-text" onChange={(e) => setPass(e.target.value)}></input><br></br>
         <input type="checkbox" className="remember" /><span >Remember Me</span><br />
         <span className="forget-text">Forget Password?</span><br />
-        <button type="submit" className="login-btn" onClick={handleLogin}>Login</button>
+        <button type="submit"  className='px-5 py-2 text-sm rounded-full text-white   bg-red-600 hover:bg-red-700' onClick={handleLogin}>Login</button>
 
 
       </div>

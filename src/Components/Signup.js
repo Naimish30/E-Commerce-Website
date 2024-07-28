@@ -65,7 +65,7 @@ function Signup() {
                 <input type="text" placeholder="Last Name" name="lname" className="input-text" onChange={(e) => { setlname(e.target.value) }}></input><br /><br />
                 <input type="text" placeholder="Email or Username" name="userid" className="input-text" onChange={(e) => { setUser(e.target.value) }}></input><br /><br />
                 <input type="password" placeholder="Enter your password" name="password" className="input-text" onChange={(e) => { setPass(e.target.value) }}></input><br></br>
-                <button type="submit" className="login-btn" onClick={store}>Register</button>
+                <button type="submit" className='px-5 py-2 text-sm rounded-full text-white   bg-red-600 hover:bg-red-700' onClick={store}>Register</button>
 
 
             </div>

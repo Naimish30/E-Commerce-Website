@@ -37,18 +37,18 @@ function Cart() {
                     items.map((items,index)=>{
                         return(
                             
-                            <table className="wrapper">
+                            <table className="wrapper-123">
                                 
                                 <tbody>
                                     <tr>
-                                        <td className="cart-image"> <img className="cart-image" src={items.image}/></td>
+                                        <td className="cart-image-123"> <img className="cart-image-123" src={items.image}/></td>
                                         <td> {items.title}</td>
                                         <td>Price: {items.price}</td>
-                                        <td><button className='cart-btn' onClick={()=>updateItemQuantity(items.id,items.quantity-1)}><FontAwesomeIcon icon={faMinus}/></button></td>
+                                        <td><button className='cart-btn-123' onClick={()=>updateItemQuantity(items.id,items.quantity-1)}><FontAwesomeIcon icon={faMinus}/></button></td>
                                         <td>{items.quantity}</td>
-                                        <td><button className='cart-btn' onClick={()=>updateItemQuantity(items.id,items.quantity+1)}><FontAwesomeIcon icon={faPlus}/></button></td>
+                                        <td><button className='cart-btn-123' onClick={()=>updateItemQuantity(items.id,items.quantity+1)}><FontAwesomeIcon icon={faPlus}/></button></td>
                                         <td>Total price: {items.price*items.quantity}</td>
-                                        <button className='remove-btn' onClick={()=>removeItem(items.id)}>Remove Item</button>
+                                        <button className='remove-btn-123' onClick={()=>removeItem(items.id)}>Remove Item</button>
                                     </tr>
                                  </tbody>
                              </table>
@@ -56,9 +56,9 @@ function Cart() {
                         )
                     })
                 }
-                <div className="cart-bill">
+                <div className="cart-bill-123">
                     <h3>Cart Totals</h3>
-                    <table className="table">
+                    <table className="table-123">
                         <tbody>
                             <tr>
                                 <td>SubTotal</td>
@@ -78,7 +78,7 @@ function Cart() {
                     <button onClick={getinformation}>Proceed to Checkout</button>
                     <PDFDownloadLink document={<Pdf item={items} total={cartTotal+70} />} fileName={"Invoice.pdf"} >
           {({ blob, url, loading, error }) =>
-                loading ? "Loading..." : <button className='button'>Print Invoice</button>
+                loading ? "Loading..." : <button className='button-123'>Print Invoice</button>
               }
         </PDFDownloadLink>
                 </div>
